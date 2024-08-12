@@ -22,21 +22,10 @@ db.connect((err) => {
   console.log('MySQL connected...');
 });
 
-// Create database if not exists
-db.query('CREATE DATABASE IF NOT EXISTS flashcards_db', (err) => {
-  if (err) throw err;
-});
+
 
 // Create table if not exists
-const createTableQuery = `
-CREATE TABLE IF NOT EXISTS flashcards (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  question VARCHAR(255) NOT NULL,
-  answer TEXT NOT NULL
-)`;
-db.query(createTableQuery, (err) => {
-  if (err) throw err;
-});
+
 
 // Routes
 
