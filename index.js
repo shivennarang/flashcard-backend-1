@@ -15,12 +15,7 @@ const myurl="mysql://root:NDnjbyUJBxYrZdbPWEdkoOvONmZeTgMw@mysql.railway.interna
 // MySQL connection
 const db = mysql.createConnection(myurl);
 
-db.connect((err) => {
-  if (err) {
-    throw err;
-  }
-  console.log('MySQL connected...');
-});
+
 
 
 
